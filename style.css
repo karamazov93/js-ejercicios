@@ -1,11 +1,20 @@
-.colores{
-color: aqua;
-background-color: blueviolet;
-transition: 2s;
+*{
+    box-sizing: border-box;
+}
+ 
+input{
+    width: 400px;
 }
 
-#uno{width: 200px; height:200px; background-color: green;}
-#dos{width: 150px; height:150px; background-color: blue;}
-#tres{width: 100px; height:100px; background-color: violet;}
+div{
+    width: 400px;
+    background-color: gold;
+    color: brown;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: none;
+}
 
-
+button{
+    margin-top: 10px;
+}
