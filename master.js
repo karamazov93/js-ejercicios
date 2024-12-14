@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 
 
@@ -165,3 +166,60 @@ setTimeout(()=>{
 console.log("programa terminado")
 clearInterval(time)
 },10000)
+=======
+var a= document.getElementById("x")
+
+var b= a.parentNode;
+b.removeChild(a)
+
+/*const b= document.getElementById("elements")
+const a= document.getElementById("elementToRemove")
+const parentNoda= b.parentNode
+parentNoda.removeChild(b)*/
+
+
+var c= document.getElementById("option")
+
+c.addEventListener("change", event =>{
+    console.log("select change", event.target)
+    console.dir(event.target.value);
+    
+})
+
+
+
+
+
+const form= document.querySelector("#form")
+
+form.addEventListener("submit", event =>{
+    event.preventDefault() // una vez hecho el prevent defaout, se detiene la pagina a fin de ser pasible
+    console.log("form submit") // se ejecuta un console.log
+    console.dir(event.target); // se ve todo aquello pasible, por lo cual puede ser sometida el evento 
+                                    //en este caso el evento "submit", y desprende una cantidad ubérrima de propiedades
+                                // que son todas de la variable que tiene asignada un elemento del dom
+
+
+    for(let i= 0; i < event.target.length; i++){
+        const element= event.target[i]
+        
+        if(element.tagName === 'INPUT'){
+            
+            element.classList.remove("fail")
+            
+            if(element.value !== '')
+
+                {console.log("OK");    
+
+                }else{
+                        element.classList.add("fail")
+                        console.log("FAIL")  }
+
+
+            
+        }
+    }})
+
+
+    
+>>>>>>> 18845af (agregando archivos)

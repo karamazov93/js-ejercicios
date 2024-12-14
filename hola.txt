@@ -1,0 +1,33 @@
+// /\w/ : en mayuscula no son alfanumericos, en miniscula son
+
+
+// la d minuscula busca los números. es decir digitos, y el negado de dígito es "D" Mayuscula
+
+// la " es para buscar saltos de línea, espacios o bloques, sangria etc"
+
+
+
+// 1{2} BUSCAR EL NUMERO Y A CONTINUACION ENTRE CORCHETES LA CANTIDAD DE VECES QUE QUIERO QUE APAREZCA FUNCIONA PARA CARACTERES STRING Y LETRAS
+
+
+// /(\w\d){2}/ selecciona la posicion de la "w" luego de la d y a continuacion, la cantidad que tienen que estar en este caso 2 es decir ff44// 
+
+
+
+ // simplificacion de expresiones.
+
+// 12{1,} == (12)+ quiero encontrar el 12 una o más
+// 12{0,}== (12)* quiero encontrar el 12, no importa si está y si esta tambien mas
+
+//12{0,1}(12)? quiero encontrar el 12 y no importa si no está y si está quiero encontrarlo una vez
+
+//----------------------------------------------------------------------------------------------------------------//
+
+//opciones tanto de alfanumericos como de cantidad en cuestion de busqueda//
+
+// [M T P] [0-3] BUSCAR ESOS CARACTERES LUEGO LES PODES AÑADIR LA CANTIDAD DE VECES QUE QUERES ENCONTRAR
+
+//^: quiero que comience con un patron
+// $: quiero que termine con un patron
+
+//[mnt]/g busca una porcion del texto (y si no queremos mayuscula lo escribimos asi [mnt]/gi) y gim con m si quiero que se aplique en cada una de las lineas
